@@ -1,5 +1,5 @@
 import { useProduct } from "../../../contex/product.context";
-
+import {FilterHeadName} from "./FilterHeadName";
 export function PriceRangeFilters() {
   const {
     state: { sliderValue },
@@ -7,7 +7,7 @@ export function PriceRangeFilters() {
   } = useProduct();
   return (
     <>
-      <label>Select Price Range : </label>
+      <FilterHeadName name="Price Range" />
       <span> 20 - {sliderValue}</span>
       <br />
       <input
